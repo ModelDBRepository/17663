@@ -15,24 +15,24 @@
                      http://cns.iaf.cnrs-gif.fr/Main.html
 
 
-This package is running with the NEURON simulation program written by Michael
-Hines and available on internet at:
+This package is running with the NEURON simulation program written by
+Michael Hines and available on internet at:
   http://www.neuron.yale.edu/neuron/
   http://neuron.duke.edu/
 
-The package contains mechanisms (.mod files) and programs (.oc files) needed to
-simulate different models of thalamic reticular (RE) neurons, relative to the
-paper:
+The package contains mechanisms (.mod files) and programs (.oc files)
+needed to simulate different models of thalamic reticular (RE)
+neurons, relative to the paper:
 
-  Destexhe A, Contreras D, Steriade M, Sejnowski TJ and Huguenard JR.  
-  In vivo, in vitro and computational analysis of dendritic calcium currents 
-  in thalamic reticular neurons.  Journal of Neuroscience 16: 169-185, 1996.
-http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=8613783&query_hl=7
+  Destexhe A, Contreras D, Steriade M, Sejnowski TJ and Huguenard JR.
+  In vivo, in vitro and computational analysis of dendritic calcium
+  currents in thalamic reticular neurons.
+  Journal of Neuroscience 16:  169-185, 1996.
+  http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=8613783&query_hl=7
 
 
 A postscript version of this paper, including figures, is available on
-internet at 
-  http://cns.iaf.cnrs-gif.fr/Main.html
+internet at http://cns.iaf.cnrs-gif.fr/Main.html
   
   PROGRAMS
   ========
@@ -62,9 +62,9 @@ Use autolaunch on modeldb or:
 
 unix platform:
 
-  To compile the demo, NEURON and INTERVIEWS must be installed and working on
-  the machine you are using.  Just type "nrnivmodl" to compile the mechanisms
-  given in the mod files.
+  To compile the demo, NEURON and INTERVIEWS must be installed and
+  working on the machine you are using.  Just type "nrnivmodl" to
+  compile the mechanisms given in the mod files.
 
   Then, execute the main demo program by typing:
 
@@ -72,16 +72,17 @@ unix platform:
 
 mswin platform:
 
-  Compile the mechanism (mod) files by using mknrndll.  Then start the simulation
-  by clicking on mosinit.hoc in windows explorer.
+  Compile the mechanism (mod) files by using mknrndll.  Then start the
+  simulation by clicking on mosinit.hoc in windows explorer.
 
 After either of the above platforms instructions: 
 
-Once the menu and graphics interface has appeared, click on "Init and Run" button
-or if appropriate ""Start protocol" for voltage clamp families, to start the simulation...
+Once the menu and graphics interface has appeared, click on "Init and
+Run" button or if appropriate ""Start protocol" for voltage clamp
+families, to start the simulation...
 
-For more information about how to get NEURON and how to install it, please
-refer to the following sites:
+For more information about how to get NEURON and how to install it,
+please refer to the following sites:
   http://www.neuron.yale.edu/neuron/
   http://neuron.duke.edu/
 
@@ -97,4 +98,7 @@ Destexhe@iaf.cnrs-gif.fr
 http://cns.iaf.cnrs-gif.fr/Main.html
 
 Updated 7/10/05 for button restart fix.
-
+20120110 updated IT2.mod, capump.mod to replace euler with cnexp,
+derivimplicit, respectively as per
+http://www.neuron.yale.edu/phpbb/viewtopic.php?f=28&t=592
+and reformatted readme.
